@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { handle } from 'hono/vercel';
+import { handle } from 'hono/netlify';
 
 import auth from "@/features/auth/server/route";
 import members from "@/features/members/server/route"; 
