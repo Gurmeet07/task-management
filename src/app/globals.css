@@ -86,3 +86,7 @@ body {
 .hide-scrollbar::--webkit-scrollbar {
   display:none;
 }
+
+button.rdp-button_next {
+  transform: rotate(180deg)!important;
+}
