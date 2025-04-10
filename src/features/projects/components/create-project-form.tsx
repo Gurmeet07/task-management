@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DottedSeparator } from "@/components/dotted-separator";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {
   Form,
   FormControl,
@@ -72,7 +72,7 @@ export const CreateProjectForm = ({ onCancel }: CreateProjectFormProps) => {
 
   return (
     <Card className="w-full h-full border-none shadow-none">
-      <CardHeader className="flex p-7">
+       <CardHeader className="flex p-7">
         <CardTitle className="text-xl font-bold">
           Create a new project
         </CardTitle>
@@ -105,7 +105,7 @@ export const CreateProjectForm = ({ onCancel }: CreateProjectFormProps) => {
               name="image"
               render={({field}) => (
                <div className="flex flex-col gap-y-2">
-                <div className="flex items-center gap-x-5">
+                <div className="hidden flex items-center gap-x-5">
                   {field.value ? (
                     <div className="size-[72px] relative rounded-md overflow-hidden">
                       <Image 
